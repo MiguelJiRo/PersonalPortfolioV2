@@ -56,7 +56,7 @@
 
       &:after {
         content: "";
-        font-size: 9px;
+        font-size: 13px;
         letter-spacing: 2px;
         position: absolute;
         bottom: 0;
@@ -87,9 +87,9 @@
       }
     }
 
-    a.portfolio-link {
+    a.work-link {
       &:after {
-        content: "PORTFOLIO";
+        content: "WORK";
       }
     }
 

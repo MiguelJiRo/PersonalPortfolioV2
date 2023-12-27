@@ -1,11 +1,11 @@
 import React from "react";
 import { AppLayout } from "@/layouts";
-import { ListContainer } from "@/pods/list";
+import { HomeContainer } from "@/pods/home";
 
-export const ListPage: React.FC = () => {
+export const HomePage: React.FC = () => {
   return (
     <AppLayout>
-      <ListContainer />
+      <HomeContainer />
     </AppLayout>
   );
 };

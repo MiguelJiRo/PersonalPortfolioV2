@@ -10,7 +10,7 @@ module.exports = {
     plugins: [new TsconfigPathsPlugin()],
   },
   entry: {
-    app: ["./index.tsx", "./global-css/styles.css"],
+    app: ["./index.tsx", "./global-css/styles.scss"],
   },
   devtool: "eval-source-map",
   stats: "errors-only",

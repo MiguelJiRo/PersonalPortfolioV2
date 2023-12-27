@@ -39,8 +39,8 @@ export const SidebarComponent = () => {
             <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
           </NavLink>
           <NavLink
-            className="portfolio-link"
-            to="/portfolio"
+            className="work-link"
+            to="/work"
             onClick={() => setShowNav(false)}
           >
             <FontAwesomeIcon icon={faSuitcase} color="#4d4d4e" />
