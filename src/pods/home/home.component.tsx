@@ -82,14 +82,23 @@ export const HomeComponent = () => {
       </div>
       <div className="div-20px">
         <span className="symbol-color-vscode">{"<"}</span>
-        <span className="tag-color-vscode">span</span>
+        <span className="tag-color-vscode">h1</span>
+        <span className="symbol-color-vscode">{">"}</span>
+        <span className="text-color-vscode"> Hi! I'm Miguel </span>
+        <span className="symbol-color-vscode">{"<"}</span>
+        <span className="tag-color-vscode">/h1</span>
+        <span className="symbol-color-vscode">{">"}</span>
+      </div>
+      <div className="div-20px">
+        <span className="symbol-color-vscode">{"<"}</span>
+        <span className="tag-color-vscode">h2</span>
         <span className="symbol-color-vscode">{">"}</span>
         <span className="text-color-vscode">
           {" "}
-          Hi! I'm Miguel,a Computer Engineer who loves to create apps and games{" "}
+          Computer Engineer who loves to create apps and games{" "}
         </span>
         <span className="symbol-color-vscode">{"<"}</span>
-        <span className="tag-color-vscode">/span</span>
+        <span className="tag-color-vscode">/h2</span>
         <span className="symbol-color-vscode">{">"}</span>
       </div>
       <div className="div-20px">

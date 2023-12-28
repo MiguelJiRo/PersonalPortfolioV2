@@ -9,7 +9,7 @@ export const NumbersColumnComponent = () => {
       {numbers.map((number) => (
         <span
           key={number}
-          className={number === 7 ? "actual-number" : "number"}
+          className={number === 8 ? "actual-number" : "number"}
         >
           {number}
         </span>
