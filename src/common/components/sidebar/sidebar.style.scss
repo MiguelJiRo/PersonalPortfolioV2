@@ -43,7 +43,7 @@
       }
 
       &:hover {
-        color: #ffd700;
+        color: #cccccc;
 
         svg {
           opacity: 0;
@@ -67,11 +67,11 @@
         -webkit-transition: all 0.3s ease-out;
         transition: all 0.3s ease-out;
       }
+    }
 
-      &:first-child {
-        &:after {
-          content: "HOME";
-        }
+    a.home-link {
+      &:after {
+        content: "HOME";
       }
     }
 
@@ -95,7 +95,7 @@
 
     a.active {
       svg {
-        color: #ffd700;
+        color: #cccccc;
       }
     }
   }
@@ -123,7 +123,7 @@
 
       &:hover {
         .anchor-icon {
-          color: #ffd700;
+          color: #cccccc;
         }
       }
     }

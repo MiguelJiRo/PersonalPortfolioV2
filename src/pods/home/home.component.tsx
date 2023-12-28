@@ -1,8 +1,7 @@
 import { routes } from "@/core";
 import React, { useEffect, useState } from "react";
-import TrackVisibility from "react-on-screen";
 import { useNavigate } from "react-router-dom";
-import logo from "../../assets/images/logo.png";
+import "./home.styles.scss";
 
 export const HomeComponent = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -10,11 +9,7 @@ export const HomeComponent = () => {
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [
-    "Computer Engineer",
-    "Front End developer",
-    "Full Stack developer",
-  ];
+  const toRotate = ["Front End developer ❤️", "Full Stack developer"];
   const period = 2000;
 
   useEffect(() => {
@@ -55,39 +50,80 @@ export const HomeComponent = () => {
   };
 
   return (
-    <section className="banner" id="home">
-      <TrackVisibility>
-        {({ isVisible }) => (
-          <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-            <span className="tagline">Welcome to my Portfolio</span>
-            <h1>
-              {`Hi! I'm Miguel`}{" "}
-              <span
-                className="txt-rotate"
-                data-rotate='[ "Computer Engineer", "Front End developer", "Full Stack developer" ]'
-              >
-                <span className="wrap">{text}</span>
-              </span>
-            </h1>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book.
-            </p>
-            <button onClick={() => console.log("connect")}>
-              Let’s Connect
-            </button>
-          </div>
-        )}
-      </TrackVisibility>
-      <TrackVisibility>
-        {({ isVisible }) => (
-          <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
-            <img src={logo} alt="Header Img" />
-          </div>
-        )}
-      </TrackVisibility>
-    </section>
+    <div className="home-container" id="home">
+      <div>
+        <span className="symbol-color-vscode">{"<"}</span>
+        <span className="tag-color-vscode">html</span>
+        <span className="symbol-color-vscode">{">"}</span>
+      </div>
+      <div>
+        <span className="symbol-color-vscode">{"<"}</span>
+        <span className="tag-color-vscode">head</span>
+        <span className="symbol-color-vscode">{">"}</span>
+      </div>
+      <div className="div-20px">
+        <span className="symbol-color-vscode">{"<"}</span>
+        <span className="tag-color-vscode">title</span>
+        <span className="symbol-color-vscode">{">"}</span>
+        <span className="text-color-vscode"> Welcome to my Portfolio </span>
+        <span className="symbol-color-vscode">{"<"}</span>
+        <span className="tag-color-vscode">/title</span>
+        <span className="symbol-color-vscode">{">"}</span>
+      </div>
+      <div>
+        <span className="symbol-color-vscode">{"<"}</span>
+        <span className="tag-color-vscode">/head</span>
+        <span className="symbol-color-vscode">{">"}</span>
+      </div>
+      <div>
+        <span className="symbol-color-vscode">{"<"}</span>
+        <span className="tag-color-vscode">body</span>
+        <span className="symbol-color-vscode">{">"}</span>
+      </div>
+      <div className="div-20px">
+        <span className="symbol-color-vscode">{"<"}</span>
+        <span className="tag-color-vscode">span</span>
+        <span className="symbol-color-vscode">{">"}</span>
+        <span className="text-color-vscode">
+          {" "}
+          Hi! I'm Miguel,a Computer Engineer who loves to create apps and games{" "}
+        </span>
+        <span className="symbol-color-vscode">{"<"}</span>
+        <span className="tag-color-vscode">/span</span>
+        <span className="symbol-color-vscode">{">"}</span>
+      </div>
+      <div className="div-20px">
+        <span className="symbol-color-vscode">{"<"}</span>
+        <span className="tag-color-vscode">span</span>
+        <span className="symbol-color-vscode">{">"}</span>
+        <span className="text-color-vscode"> {text} </span>
+        <span className="symbol-color-vscode">{"<"}</span>
+        <span className="tag-color-vscode">/span</span>
+        <span className="symbol-color-vscode">{">"}</span>
+      </div>
+      <div className="div-20px" onClick={() => console.log("connect")}>
+        <span className="symbol-color-vscode">{"<"}</span>
+        <span className="tag-color-vscode">button</span>
+        <span className="symbol-color-vscode">{">"}</span>
+      </div>
+      <div className="div-20px">
+        <a className="button">Let’s Connect </a>
+      </div>
+      <div className="div-20px">
+        <span className="symbol-color-vscode">{"<"}</span>
+        <span className="tag-color-vscode">/button</span>
+        <span className="symbol-color-vscode">{">"}</span>
+      </div>
+      <div>
+        <span className="symbol-color-vscode">{"<"}</span>
+        <span className="tag-color-vscode">/body</span>
+        <span className="symbol-color-vscode">{">"}</span>
+      </div>
+      <div>
+        <span className="symbol-color-vscode">{"<"}</span>
+        <span className="tag-color-vscode">/html</span>
+        <span className="symbol-color-vscode">{">"}</span>
+      </div>
+    </div>
   );
 };

@@ -28,7 +28,11 @@ export const SidebarComponent = () => {
           <img src={logo} alt="Logo" />
         </Link>
         <div>
-          <NavLink to="/" onClick={() => setShowNav(false)}>
+          <NavLink
+            className="home-link"
+            to="/"
+            onClick={() => setShowNav(false)}
+          >
             <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
           </NavLink>
           <NavLink

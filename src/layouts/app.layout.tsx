@@ -12,7 +12,7 @@ export const AppLayout: React.FC<Props> = ({ children }) => {
   return (
     <>
       <SidebarComponent />
-      {children}
+      <div className="layout-children">{children}</div>
     </>
   );
 };
