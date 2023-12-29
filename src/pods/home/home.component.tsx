@@ -116,7 +116,7 @@ export const HomeComponent = () => {
         <span className="symbol-color-vscode">{">"}</span>
       </div>
       <div className="div-20px">
-        <a className="button">Let’s Connect </a>
+        <a className="button-connect">Let’s Connect </a>
       </div>
       <div className="div-20px">
         <span className="symbol-color-vscode">{"<"}</span>

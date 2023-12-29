@@ -1,0 +1,69 @@
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0turn;
+}
+
+.popup-container {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  width: 30rem;
+  height: 11rem;
+  font-size: 1.5rem;
+  background-color: #181818;
+
+  color: #666666;
+  margin: 0 2rem 2rem 0;
+  padding: 1rem;
+
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+.popup-effect {
+  animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.nav-popup {
+  color: #cccccc;
+  text-decoration: none;
+}
+
+.popup-box {
+  --border-size: 3px;
+  --border-angle: 0turn;
+  background-image: conic-gradient(
+      from var(--border-angle),
+      #181818,
+      #181818 50%,
+      #181818
+    ),
+    conic-gradient(from var(--border-angle), transparent 20%, #666666, #5293c9);
+  background-size: calc(100% - (var(--border-size) * 2))
+      calc(100% - (var(--border-size) * 2)),
+    cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  animation: bg-spin 3s linear infinite;
+  @keyframes bg-spin {
+    to {
+      --border-angle: 1turn;
+    }
+  }
+
+  &:hover {
+    animation-play-state: paused;
+  }
+}
