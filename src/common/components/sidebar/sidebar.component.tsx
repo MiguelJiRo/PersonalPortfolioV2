@@ -8,11 +8,12 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import {
   faHome,
-  faUser,
   faEnvelope,
   faSuitcase,
   faBars,
   faClose,
+  faGears,
+  faUserNinja,
 } from "@fortawesome/free-solid-svg-icons";
 import { Link, NavLink } from "react-router-dom";
 import React from "react";
@@ -40,11 +41,18 @@ export const SidebarComponent = () => {
             to="/about"
             onClick={() => setShowNav(false)}
           >
-            <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
+            <FontAwesomeIcon icon={faUserNinja} color="#4d4d4e" />
           </NavLink>
           <NavLink
-            className="work-link"
-            to="/work"
+            className="experience-link"
+            to="/experience"
+            onClick={() => setShowNav(false)}
+          >
+            <FontAwesomeIcon icon={faGears} color="#4d4d4e" />
+          </NavLink>
+          <NavLink
+            className="projects-link"
+            to="/projects"
             onClick={() => setShowNav(false)}
           >
             <FontAwesomeIcon icon={faSuitcase} color="#4d4d4e" />
@@ -59,7 +67,7 @@ export const SidebarComponent = () => {
           <FontAwesomeIcon
             onClick={() => setShowNav(false)}
             icon={faClose}
-            color="#ffd700"
+            color="#cccccc"
             size="3x"
             className="close-icon"
           />
@@ -105,7 +113,7 @@ export const SidebarComponent = () => {
       <FontAwesomeIcon
         onClick={() => setShowNav(true)}
         icon={faBars}
-        color="#ffd700"
+        color="#cccccc"
         size="3x"
         className="hamburger-icon"
       />

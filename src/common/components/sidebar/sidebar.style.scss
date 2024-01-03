@@ -82,15 +82,21 @@
       }
     }
 
+    a.experience-link {
+      &:after {
+        content: "EXP.";
+      }
+    }
+
     a.contact-link {
       &:after {
         content: "CONTACT";
       }
     }
 
-    a.work-link {
+    a.projects-link {
       &:after {
-        content: "WORK";
+        content: "PROJECTS";
       }
     }
 

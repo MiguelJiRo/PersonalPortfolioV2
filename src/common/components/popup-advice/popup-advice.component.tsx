@@ -7,11 +7,12 @@ import { useState, useEffect } from "react";
 
 interface Props {
   message: string;
+  submessage: string;
   page: string;
 }
 
 export const PopupAdviceComponent: React.FunctionComponent<Props> = (props) => {
-  const { message, page } = props;
+  const { message, submessage, page } = props;
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
@@ -29,8 +30,7 @@ export const PopupAdviceComponent: React.FunctionComponent<Props> = (props) => {
           <span>{message}</span>
           <NavLink className="nav-popup" to={`/${page}`}>
             <FontAwesomeIcon icon={faArrowRight} color="#cccccc" />
-            <span> {page} </span>
-            <FontAwesomeIcon icon={faUser} color="#cccccc" />
+            <span> {submessage} </span>
           </NavLink>
         </div>
       </div>

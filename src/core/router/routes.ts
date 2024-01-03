@@ -4,16 +4,20 @@ interface SwitchRoutes {
   root: string;
   home: string;
   about: string;
-  work: string;
+  experience: string;
+  projects: string;
   details: string;
+  contact: string;
 }
 
 export const switchRoutes: SwitchRoutes = {
   root: "/",
   home: "/home",
   about: "/about",
-  work: "/work",
+  experience: "/experience",
+  projects: "/projects",
   details: "/work/:id",
+  contact: "/contact",
 };
 
 interface Routes extends Omit<SwitchRoutes, "details"> {
