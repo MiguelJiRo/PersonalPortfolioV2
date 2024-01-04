@@ -8,7 +8,6 @@ export const HomePage: React.FC = () => {
   return (
     <AppLayout>
       <div className="home-layout">
-        <NumbersColumnComponent />
         <HomeContainer />
         <PopupAdviceComponent
           message="Hello! 👋 This is MiguelAdvisor, your virtual assistant. I'm here to help 🙂"

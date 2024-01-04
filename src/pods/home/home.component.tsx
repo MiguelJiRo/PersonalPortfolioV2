@@ -2,6 +2,7 @@ import { routes } from "@/core";
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./home.styles.scss";
+import { NumbersColumnComponent, Reveal } from "@/common/components";
 
 export const HomeComponent = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -50,89 +51,98 @@ export const HomeComponent = () => {
   };
 
   return (
-    <div className="home-container" id="home">
-      <div>
-        <span className="symbol-color-vscode">{"<"}</span>
-        <span className="tag-color-vscode">html</span>
-        <span className="symbol-color-vscode">{">"}</span>
+    <>
+      <div className="home-container-mobile">
+        <Reveal>
+          <NumbersColumnComponent />
+        </Reveal>
       </div>
-      <div>
-        <span className="symbol-color-vscode">{"<"}</span>
-        <span className="tag-color-vscode">head</span>
-        <span className="symbol-color-vscode">{">"}</span>
-      </div>
-      <div className="div-20px">
-        <span className="symbol-color-vscode">{"<"}</span>
-        <span className="tag-color-vscode">title</span>
-        <span className="symbol-color-vscode">{">"}</span>
-        <span className="text-color-vscode"> Welcome to my Portfolio </span>
-        <span className="symbol-color-vscode">{"<"}</span>
-        <span className="tag-color-vscode">/title</span>
-        <span className="symbol-color-vscode">{">"}</span>
-      </div>
-      <div>
-        <span className="symbol-color-vscode">{"<"}</span>
-        <span className="tag-color-vscode">/head</span>
-        <span className="symbol-color-vscode">{">"}</span>
-      </div>
-      <div>
-        <span className="symbol-color-vscode">{"<"}</span>
-        <span className="tag-color-vscode">body</span>
-        <span className="symbol-color-vscode">{">"}</span>
-      </div>
-      <div className="div-20px">
-        <span className="symbol-color-vscode">{"<"}</span>
-        <span className="tag-color-vscode">h1</span>
-        <span className="symbol-color-vscode">{">"}</span>
-        <span className="text-color-vscode"> Hey!! I'm Miguel </span>
-        <span className="symbol-color-vscode">{"<"}</span>
-        <span className="tag-color-vscode">/h1</span>
-        <span className="symbol-color-vscode">{">"}</span>
-      </div>
-      <div className="div-20px">
-        <span className="symbol-color-vscode">{"<"}</span>
-        <span className="tag-color-vscode">h2</span>
-        <span className="symbol-color-vscode">{">"}</span>
-        <span className="text-color-vscode">
-          {" "}
-          Computer Science Engineer who loves to create apps and games{" "}
-        </span>
-        <span className="symbol-color-vscode">{"<"}</span>
-        <span className="tag-color-vscode">/h2</span>
-        <span className="symbol-color-vscode">{">"}</span>
-      </div>
-      <div className="div-20px">
-        <span className="symbol-color-vscode">{"<"}</span>
-        <span className="tag-color-vscode">span</span>
-        <span className="symbol-color-vscode">{">"}</span>
-        <span className="text-color-vscode"> {text} </span>
-        <span className="symbol-color-vscode">{"<"}</span>
-        <span className="tag-color-vscode">/span</span>
-        <span className="symbol-color-vscode">{">"}</span>
-      </div>
-      <div className="div-20px" onClick={() => console.log("connect")}>
-        <span className="symbol-color-vscode">{"<"}</span>
-        <span className="tag-color-vscode">button</span>
-        <span className="symbol-color-vscode">{">"}</span>
-      </div>
-      <div className="div-20px">
-        <a className="button-connect">Let’s Connect </a>
-      </div>
-      <div className="div-20px">
-        <span className="symbol-color-vscode">{"<"}</span>
-        <span className="tag-color-vscode">/button</span>
-        <span className="symbol-color-vscode">{">"}</span>
-      </div>
-      <div>
-        <span className="symbol-color-vscode">{"<"}</span>
-        <span className="tag-color-vscode">/body</span>
-        <span className="symbol-color-vscode">{">"}</span>
-      </div>
-      <div>
-        <span className="symbol-color-vscode">{"<"}</span>
-        <span className="tag-color-vscode">/html</span>
-        <span className="symbol-color-vscode">{">"}</span>
-      </div>
-    </div>
+      <Reveal>
+        <div className="home-container-mobile-code" id="home">
+          <div>
+            <span className="symbol-color-vscode">{"<"}</span>
+            <span className="tag-color-vscode">html</span>
+            <span className="symbol-color-vscode">{">"}</span>
+          </div>
+          <div>
+            <span className="symbol-color-vscode">{"<"}</span>
+            <span className="tag-color-vscode">head</span>
+            <span className="symbol-color-vscode">{">"}</span>
+          </div>
+          <div className="div-20px">
+            <span className="symbol-color-vscode">{"<"}</span>
+            <span className="tag-color-vscode">title</span>
+            <span className="symbol-color-vscode">{">"}</span>
+            <span className="text-color-vscode"> Welcome to my Portfolio </span>
+            <span className="symbol-color-vscode">{"<"}</span>
+            <span className="tag-color-vscode">/title</span>
+            <span className="symbol-color-vscode">{">"}</span>
+          </div>
+          <div>
+            <span className="symbol-color-vscode">{"<"}</span>
+            <span className="tag-color-vscode">/head</span>
+            <span className="symbol-color-vscode">{">"}</span>
+          </div>
+          <div>
+            <span className="symbol-color-vscode">{"<"}</span>
+            <span className="tag-color-vscode">body</span>
+            <span className="symbol-color-vscode">{">"}</span>
+          </div>
+          <div className="div-20px">
+            <span className="symbol-color-vscode">{"<"}</span>
+            <span className="tag-color-vscode">h1</span>
+            <span className="symbol-color-vscode">{">"}</span>
+            <span className="text-color-vscode"> Hey!! I'm Miguel </span>
+            <span className="symbol-color-vscode">{"<"}</span>
+            <span className="tag-color-vscode">/h1</span>
+            <span className="symbol-color-vscode">{">"}</span>
+          </div>
+          <div className="div-20px">
+            <span className="symbol-color-vscode">{"<"}</span>
+            <span className="tag-color-vscode">h2</span>
+            <span className="symbol-color-vscode">{">"}</span>
+            <span className="text-color-vscode">
+              {" "}
+              Computer Science Engineer who loves to create apps and games{" "}
+            </span>
+            <span className="symbol-color-vscode">{"<"}</span>
+            <span className="tag-color-vscode">/h2</span>
+            <span className="symbol-color-vscode">{">"}</span>
+          </div>
+          <div className="div-20px">
+            <span className="symbol-color-vscode">{"<"}</span>
+            <span className="tag-color-vscode">span</span>
+            <span className="symbol-color-vscode">{">"}</span>
+            <span className="text-color-vscode"> {text} </span>
+            <span className="symbol-color-vscode">{"<"}</span>
+            <span className="tag-color-vscode">/span</span>
+            <span className="symbol-color-vscode">{">"}</span>
+          </div>
+          <div className="div-20px" onClick={() => console.log("connect")}>
+            <span className="symbol-color-vscode">{"<"}</span>
+            <span className="tag-color-vscode">button</span>
+            <span className="symbol-color-vscode">{">"}</span>
+          </div>
+          <div className="div-20px">
+            <a className="button-connect">Let’s Connect </a>
+          </div>
+          <div className="div-20px">
+            <span className="symbol-color-vscode">{"<"}</span>
+            <span className="tag-color-vscode">/button</span>
+            <span className="symbol-color-vscode">{">"}</span>
+          </div>
+          <div>
+            <span className="symbol-color-vscode">{"<"}</span>
+            <span className="tag-color-vscode">/body</span>
+            <span className="symbol-color-vscode">{">"}</span>
+          </div>
+          <div>
+            <span className="symbol-color-vscode">{"<"}</span>
+            <span className="tag-color-vscode">/html</span>
+            <span className="symbol-color-vscode">{">"}</span>
+          </div>
+        </div>
+      </Reveal>
+    </>
   );
 };
