@@ -1,5 +1,5 @@
 import React from "react";
-import { HashRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { switchRoutes } from "./routes";
 import {
   AboutPage,
@@ -11,7 +11,7 @@ import {
 
 export const RouterComponent: React.FC = () => {
   return (
-    <HashRouter>
+    <Router>
       <Routes>
         <Route path={switchRoutes.root} element={<HomePage />} />
         <Route path={switchRoutes.home} element={<HomePage />} />
@@ -20,6 +20,6 @@ export const RouterComponent: React.FC = () => {
         <Route path={switchRoutes.projects} element={<ProjectsPage />} />
         <Route path={switchRoutes.contact} element={<ContactPage />} />
       </Routes>
-    </HashRouter>
+    </Router>
   );
 };
