@@ -1,4 +1,3 @@
-import { routes } from "@/core";
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./about.styles.scss";
