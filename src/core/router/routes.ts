@@ -1,6 +1,4 @@
-import { generatePath } from "react-router-dom";
-
-interface SwitchRoutes {
+interface BaseRoutes {
   root: string;
   home: string;
   about: string;
@@ -10,7 +8,7 @@ interface SwitchRoutes {
   contact: string;
 }
 
-export const switchRoutes: SwitchRoutes = {
+const baseRoutes: SwitchRoutes = {
   root: "/",
   home: "/home",
   about: "/about",
@@ -20,11 +18,14 @@ export const switchRoutes: SwitchRoutes = {
   contact: "/contact",
 };
 
-interface Routes extends Omit<SwitchRoutes, "details"> {
-  details: (id: string) => string;
-}
+type SwitchRoutes = BaseRoutes;
 
-export const routes: Routes = {
-  ...switchRoutes,
-  details: (id) => generatePath(switchRoutes.details, { id }),
+export const switchRoutes: SwitchRoutes = {
+  ...baseRoutes,
+};
+
+type LinkRoutes = BaseRoutes;
+
+export const linkRoutes: LinkRoutes = {
+  ...baseRoutes,
 };
