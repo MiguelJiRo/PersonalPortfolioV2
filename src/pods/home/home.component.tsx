@@ -52,6 +52,24 @@ export const HomeComponent = () => {
 
   return (
     <>
+      <div className="home-container">
+        <div className="home-container-center">
+          <Reveal>
+            <span className="text-color-vscode home-container-main">
+              Hey, I'm Miguel<span className="tag-color-vscode">.</span>
+            </span>
+          </Reveal>
+          <Reveal>
+            <span className="symbol-color-vscode home-container-sub">
+              I'm a{" "}
+              <span className="tag-color-vscode">Front-End Developer</span>
+            </span>
+          </Reveal>
+          <Reveal>
+            <a className="button-connect">Let’s Connect </a>
+          </Reveal>
+        </div>
+      </div>
       <div className="home-container-mobile">
         <Reveal>
           <NumbersColumnComponent />

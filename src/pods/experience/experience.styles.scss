@@ -63,7 +63,7 @@
     border: 1px #5293c9 solid;
     padding: 0.3rem;
     border-radius: 10px;
-    width: 140px;
+    width: 150px;
     height: 40px;
     text-decoration: none;
     cursor: pointer;
@@ -92,6 +92,9 @@
     }
 
     .exp-card-technologies {
+      max-width: 100vw;
+      overflow: auto;
+      padding: 10px;
       span {
         font-size: 0.7rem;
       }
@@ -100,7 +103,7 @@
     .exp-card-more-info {
       font-size: 0.9rem;
       border-radius: 10px;
-      width: 100px;
+      width: 110px;
       height: 25px;
     }
   }
