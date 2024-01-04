@@ -33,3 +33,9 @@ body {
 .text-color-vscode {
   color: #cccccc;
 }
+
+@media screen and (max-width: 1200px) {
+  .layout-children {
+    margin-left: 0px;
+  }
+}

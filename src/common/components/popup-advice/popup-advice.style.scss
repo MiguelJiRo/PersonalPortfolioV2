@@ -67,3 +67,9 @@
     animation-play-state: paused;
   }
 }
+
+@media screen and (max-width: 1200px) {
+  .popup-container {
+    display: none;
+  }
+}

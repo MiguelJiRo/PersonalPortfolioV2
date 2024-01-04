@@ -44,3 +44,35 @@
     }
   }
 }
+
+@media screen and (max-width: 1200px) {
+  .about-container {
+    font-size: 1.1rem;
+
+    .about-main-container {
+      max-height: 50rem;
+      overflow: auto;
+      justify-content: flex-start;
+
+      .about-left-container {
+        width: 55%;
+      }
+
+      .about-right-container {
+        width: 40%;
+        margin-left: 10px;
+
+        h2 {
+          font-size: 1.2rem;
+        }
+
+        .skills-container {
+          img {
+            width: 32px;
+            height: 32px;
+          }
+        }
+      }
+    }
+  }
+}

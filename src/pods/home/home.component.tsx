@@ -84,7 +84,7 @@ export const HomeComponent = () => {
         <span className="symbol-color-vscode">{"<"}</span>
         <span className="tag-color-vscode">h1</span>
         <span className="symbol-color-vscode">{">"}</span>
-        <span className="text-color-vscode"> Hi! I'm Miguel </span>
+        <span className="text-color-vscode"> Hey!! I'm Miguel </span>
         <span className="symbol-color-vscode">{"<"}</span>
         <span className="tag-color-vscode">/h1</span>
         <span className="symbol-color-vscode">{">"}</span>
@@ -95,7 +95,7 @@ export const HomeComponent = () => {
         <span className="symbol-color-vscode">{">"}</span>
         <span className="text-color-vscode">
           {" "}
-          Computer Engineer who loves to create apps and games{" "}
+          Computer Science Engineer who loves to create apps and games{" "}
         </span>
         <span className="symbol-color-vscode">{"<"}</span>
         <span className="tag-color-vscode">/h2</span>
