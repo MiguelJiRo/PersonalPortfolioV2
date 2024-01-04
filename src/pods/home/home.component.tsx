@@ -55,14 +55,20 @@ export const HomeComponent = () => {
       <div className="home-container">
         <div className="home-container-center">
           <Reveal>
-            <span className="text-color-vscode home-container-main">
+            <span className="text-color-vscode home-container-maintitle">
               Hey, I'm Miguel<span className="tag-color-vscode">.</span>
             </span>
           </Reveal>
           <Reveal>
-            <span className="symbol-color-vscode home-container-sub">
+            <span className="symbol-color-vscode home-container-title">
               I'm a{" "}
               <span className="tag-color-vscode">Front-End Developer</span>
+            </span>
+          </Reveal>
+          <Reveal>
+            <span className="symbol-color-vscode home-container-subtitle">
+              Computer Science Engineer who loves to create apps and games
+              <span className="text-color-vscode">.</span>
             </span>
           </Reveal>
           <Reveal>

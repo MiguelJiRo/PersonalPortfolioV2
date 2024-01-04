@@ -30,17 +30,21 @@
     display: flex;
     flex-direction: column;
 
-    .home-container-main {
+    .home-container-maintitle {
       font-size: 5rem;
       font-weight: bold;
     }
 
-    .home-container-sub {
+    .home-container-title {
       font-size: 3rem;
 
       span {
         font-weight: bold;
       }
+    }
+
+    .home-container-subtitle {
+      font-size: 2rem;
     }
   }
 }
