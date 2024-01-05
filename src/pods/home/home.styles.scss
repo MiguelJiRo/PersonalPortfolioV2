@@ -98,23 +98,20 @@
 
 @media screen and (max-width: 1200px) {
   .home-container {
-    display: none;
-  }
+    font-size: 1.2rem;
 
-  .home-container-mobile {
-    display: block;
-  }
+    .home-container-center {
+      .home-container-maintitle {
+        font-size: 4rem;
+      }
 
-  .home-container-mobile-code {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    gap: 0.1rem;
-    font-size: 1.5rem;
-    margin: 0.2rem;
-  }
+      .home-container-title {
+        font-size: 1.8rem;
+      }
 
-  .div-20px {
-    text-indent: 20px;
+      .home-container-subtitle {
+        font-size: 1.3rem;
+      }
+    }
   }
 }

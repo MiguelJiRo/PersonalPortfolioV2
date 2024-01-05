@@ -13,7 +13,6 @@ export const Reveal = ({ children, width = "fit-content" }: Props) => {
   const slideControls = useAnimation();
   useEffect(() => {
     if (isInView) {
-      console.log("#1");
       mainControls.start("visible");
       slideControls.start("visible");
     }
