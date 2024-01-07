@@ -24,8 +24,8 @@ export const ExperienceComponent = () => {
             "Svelte",
             "d3js",
             "Flexbox",
-            "CSS Grid",
-            "Material Design",
+            "CSSGrid",
+            "MaterialDesign",
             "CSS",
             "SASS",
             "NextJS",
@@ -39,7 +39,7 @@ export const ExperienceComponent = () => {
             "Git",
             "TDD",
             "Jest",
-            "React Testing Library",
+            "ReactTestingLibrary",
             "Jest+Typescript",
             "AWS",
             "Azure",
@@ -64,7 +64,7 @@ export const ExperienceComponent = () => {
             "Git",
             "TDD",
             "Jest",
-            "Angular Testing Library",
+            "AngularTestingLibrary",
             "Jest+Typescript",
           ]}
         />
