@@ -73,7 +73,7 @@ export const AboutComponent: React.FC<Props> = (props) => {
               </p>
             </Reveal>
             <Reveal>
-              <p className="text-color-vscode">
+              <p className="text-color-vscode fix-margin">
                 I'm always looking for new opportunities and challenges. I look
                 forward to the opportunity to work with you! 😀
               </p>

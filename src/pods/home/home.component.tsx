@@ -71,7 +71,9 @@ export const HomeComponent = () => {
             </span>
           </Reveal>
           <Reveal>
-            <a className="button-connect">Let’s Connect </a>
+            <a href="/about" className="button-connect">
+              Let’s Connect{" "}
+            </a>
           </Reveal>
         </div>
       </div>
