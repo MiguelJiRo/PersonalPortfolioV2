@@ -10,6 +10,7 @@ import mario from "../../assets/images/mario.png";
 import frogger from "../../assets/images/frogger.png";
 import memorygame from "../../assets/images/memorygame.png";
 import animesearch from "../../assets/images/animesearch.png";
+import manfredexport from "../../assets/images/manfred-export.png";
 
 export const ProjectsComponent = () => {
   return (
@@ -18,6 +19,13 @@ export const ProjectsComponent = () => {
         Projects<span className="text-color-vscode">.</span>
       </h1>
       <div className="project-cards-container">
+      <ProjectCardComponent
+          title={"Final Master’s Degree Project"}
+          infohref={"https://github.com/Lemoncode/manfred-export-app"}
+          technologies={["React", "Typescript", "EJS"]}
+          description={"Collaboration on a task of the Manfred Export App. Review and correction of the templates and fields of the React application part."}
+          imageSource={manfredexport}
+        />
         <ProjectCardComponent
           title={"Personal portfolio v2"}
           infohref={"https://migueljiro.github.io/PersonalPortfolioV2"}
